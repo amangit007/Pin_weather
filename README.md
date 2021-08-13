@@ -36,7 +36,7 @@ JSON FORMAT :
                         "temp_max": 85.23,
                         "temp_min": 85.23
                         },
-                        "name": "K\u0101lka",
+                        "name": "london",
                         "sys": {
                         "country": "IN",
                         "id": 9181,
