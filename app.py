@@ -132,10 +132,10 @@ def delete(id) :
 def apo() :
     return render_template('api.html')
 
-
+#TO CREATE REST API
 @app.route('/api/metric/<string:city>')
 def apoc(city) :
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=470551ef1a3184b421bb48e0a32b67d6'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid={YOU API KEY}'
 
     r = requests.get(url.format(city)).json()
     return r
@@ -143,7 +143,7 @@ def apoc(city) :
 
 @app.route('/api/imperial/<string:city>')
 def apof(city) :
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=470551ef1a3184b421bb48e0a32b67d6'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid={YOU API KEY}'
 
     r = requests.get(url.format(city)).json()
     return r
