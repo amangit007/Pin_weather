@@ -28,7 +28,7 @@ def first() :
             db.session.add(new_city_obj)
             db.session.commit()
 
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=470551ef1a3184b421bb48e0a32b67d6'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid={YOUR API KEY}'
 
     cities = City.query.all()
 
@@ -80,7 +80,7 @@ def second() :
             db.session.add(new_city_obj)
             db.session.commit()
 
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=470551ef1a3184b421bb48e0a32b67d6'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid={YOU API KEY}'
 
     cities = City.query.all()
 
