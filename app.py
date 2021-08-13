@@ -148,6 +148,6 @@ def apof(city) :
     r = requests.get(url.format(city)).json()
     return r
 
-
+# write debug=False while in production and remove port number
 if __name__ == "__main__" :
     app.run(debug=True, port=3700)
