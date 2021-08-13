@@ -30,6 +30,7 @@
 
 
 
+
     </style>
 
 </head>
@@ -37,7 +38,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
     <!--  Show this only on mobile to medium screens  -->
-    <a class="navbar-brand d-lg-none" href="/imperial" style="font-family: 'Cinzel', serif;color:#FFF9C8">PIN WEATHER</a>
+    <a class="navbar-brand d-lg-none" href="/imperial" style="font-family: 'Cinzel', serif;color:#FFF9C8">PIN
+        WEATHER</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
             aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,9 +79,74 @@
         <!--start here-->
 
 
-
         <div class="col-md-12">
-            <div id='card' >
+            <div id='card'>
+                <div class="container">
+                    <p>You can access the Json data through below RESTAPI's url without using key (Only for learning
+                        purposes)</p>
+                    <h5>Metric Data : </h5> <code>https://pinweather.herokuapp.com/api/metric/{CITY_NAME}</code><br><br>
+                    <h5>Imperial Data : </h5> <code>https://pinweather.herokuapp.com/api/imperial/{CITY_NAME}</code><br>
+                    <br>
+                    <h4>
+                        Original URL of Open weather api :
+                    </h4>
+                    <code>http://api.openweathermap.org/data/2.5/weather?q={CITY_NAME}&units={imperial/metric}&appid={YOUR
+                        API KEY}</code>
+                    <h4><br>
+                        JSON FORMAT :
+                    </h4>
+                    <pre>
+                    <code style="color:#E83E8C">{
+                        "base": "stations",
+                        "clouds": {
+                        "all": 95
+                        },
+                        "cod": 200,
+                        "coord": {
+                        "lat": 30.8344,
+                        "lon": 76.9333
+                        },
+                        "dt": 1628836926,
+                        "id": 1268381,
+                        "main": {
+                        "feels_like": 87.03,
+                        "grnd_level": 933,
+                        "humidity": 51,
+                        "pressure": 1003,
+                        "sea_level": 1003,
+                        "temp": 85.23,
+                        "temp_max": 85.23,
+                        "temp_min": 85.23
+                        },
+                        "name": "K\u0101lka",
+                        "sys": {
+                        "country": "IN",
+                        "id": 9181,
+                        "sunrise": 1628813834,
+                        "sunset": 1628861836,
+                        "type": 1
+                        },
+                        "timezone": 19800,
+                        "visibility": 10000,
+                        "weather": [
+                        {
+                        "description": "overcast clouds",
+                        "icon": "04d",
+                        "id": 804,
+                        "main": "Clouds"
+                        }
+                        ],
+                        "wind": {
+                        "deg": 256,
+                        "gust": 6.76,
+                        "speed": 4.03
+                        }
+                        }</code></pre>
+
+                    <h4> Developer Address : <a href="mailto:aman227422@gmail.com">Aman Sharma </a></h4>
+                    <h4>Github : <a href="https://github.com/amangit007">amangit007</a> </h4>
+
+                </div>
 
             </div>
         </div>
